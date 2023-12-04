@@ -13,19 +13,19 @@ const certificateData1=[
     {
         Image:web,
         title:'Web Design',
-        text:'I took this certificate cause of compliting introduction to Web online course',
+        text:'I took this certificate cause of completing introduction to Web online course',
         date:'May 31 2023'
     },
     {
         Image:python,
         title:'Python',
-        text:'I took this certificate cause of compliting introduction to Python online course',
+        text:'I took this certificate cause of completing introduction to Python online course',
         date:'May 31 2023'
     },
     {
         Image:beginner,
         title:'English',
-        text:'I took this certificate cause of compliting the beginner level of English',
+        text:'I took this certificate cause of completing the beginner level of English',
         date:'March 31 2018'
     }
     
@@ -34,7 +34,7 @@ const certificateData2=[
     {
         Image:pre_intemediate,
         title:'English',
-        text:'I took this certificate cause of compliting  the Pre intermediate level of English',
+        text:'I took this certificate cause of completing  the Pre intermediate level of English',
         date:'March 28 2019'
     },
     {
