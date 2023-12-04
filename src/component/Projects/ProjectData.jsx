@@ -21,7 +21,7 @@ import StarRating from './StarRating';
     projectName:'Course',
     catagory:'bootstrap',
     catagory1:'all',
-    details:'This is a Full responsive course web site with different sections I worked this project by html,css & bootstrap',
+    details:'This is a Full responsive course website  I worked this project by html,css & bootstrap',
     projectLink:'https://nazilaf2002.github.io/Course/',
     rating:<StarRating/>
   },
@@ -31,7 +31,7 @@ import StarRating from './StarRating';
     projectName:'Timer challenge',
     catagory:'reactjs',
     catagory1:'all',
-    details:'This is a timer challenge game if you  guess the correct expired time and stop the timer you will win made by react js ',
+    details:'This is a game if you  guess the correct expired time and stop the timer you will win made by react js ',
     projectLink:'https://timer-challenge-theta.vercel.app/',
      rating:<StarRating/>
   } ,
@@ -63,7 +63,7 @@ import StarRating from './StarRating';
       projectName:'Dream Travel',
       catagory:'reactjs',
       catagory1:'all',
-      details:'this website give information  about places for users with different languages this is a team work useing reactjs',
+      details:'It will give information  about places with different languages this is a team work useing reactjs',
       projectLink:'https://drem-travel.vercel.app/',
       rating:<StarRating/>
     } ,
