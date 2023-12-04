@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root {
+  --bg-color: #5FBDFF;
+  --timeline-box-color: linear-gradient(to bottom, #5FBDFF, #fff);
+  --strok-dark-color: #7ED7C1;
+  --strok-light-color: #3081D0;
+  --prograses-title-color: #7B66FF;
+  --header-bottone-hover: #157274;
+  --nav-item-small-size-bg: #9BE8D8;
+  --timeline-circle-dive-color: #B4BDFF;
+  --reuseable-button-hover-color: #157274;
+  --language-box-shadow: rgb(148, 222, 245);
+  --input-color: #EFFFFD;
+}
+
+body {
+  /* font-family: sans-serif; */
+  /* font-family: 'Sriracha', sans-serif; */
+  font-family: 'Akaya Kanadaka';
+  /* font-family: 'Itim', sans-serif !important; */
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.project-decription{
+  font-family: 'Signika Negative', sans-serif;
+}
+.my_name{
+  font-family: 'Pacifico', cursive;
+}
+
+.ovelflow {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.about_description {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: x-large;
+
+}
+
+.side_text {
+  font-family: 'Pacifico', cursive;
+}
+
+#light .side_text {
+  color: black;
+}
+
+#dark .side_text {
+  color: white;
+}
+
+.about_description_h5 {
+  font-family: 'Signika Negative', sans-serif;
+  /* font-size: x-large; */
+}
+
+#dark {
+  background-color: black;
+  border: 1px solid black;
+}
+
+#light {
+  background-color: white;
+  border: 1px solid white;
+}
+
+#light .header_h1{
+  color: black;
+}
+
+#light .text {
+  color: black;
+}
+
+#light .button__color:hover {
+  background-color: var(--header-bottone-hover);
+}
+
+#light .position_h5 {
+  color: black;
+}
+
+#light .about_h5 {
+  color: black;
+}
+
+#dark .about_h5 {
+  color: white;
+}
+
+#light .card_h2 {
+  color: black;
+}
+
+#light .card_p {
+  color: black;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+#light .card_h4 {
+  color: black;
+}
+
+#dark .card_h2,
+.card_p,
+.card_h4 {
+  color: white;
+}
+
+
+#light .prograses_h3 {
+  color: var(--prograses-title-color);
+  text-shadow: 2px 1px 2px rgb(87, 84, 84);
+}
+
+#dark .prograses_h3 {
+  color: var(--prograses-title-color);
+  text-shadow: 2px 1px 2px white;
+}
+
+#light .content {
+  background-color: black;
+  color: white;
+}
+
+#light .rate_color {
+  color: gray;
+}
+
+#dark .rate_color {
+  color: black;
+}
+
+.second_row {
+  border-radius: 3%;
+}
+
+@media screen and (max-width:1100px) {
+  .second_row {
+    border-radius: 1%;
+    padding-top: 3%;
+  }
+}
+
+#light .second_row {
+  background-color: transparent;
+  /* background-color: black; */
+}
+
+#dark .second_row {
+  background-color: transparent;
+  /* background-color: white; */
+}
+
+#light ._form label {
+  color: black;
+  /* color: white; */
+}
+
+#light ._form .input {
+  background-color: var(--input-color);
+  /* background-color: white; */
+}
+
+#dark ._form label {
+  color: white;
+  /* color: black; */
+}
+
+#dark ._form .input {
+  background-color: var(--input-color);
+}
+
+._form .submit {
+  background-color: var(--input-color);
+}
+
+#light .social_a a:hover {
+  color: black;
+}
+
+#light .date {
+  color: black;
+}
+
+#light .date_color {
+  color: black;
+}
+
+#dark .date_color {
+  color: white;
+}
+
+#light .positionOfSwitch {
+  background-color: rgb(8, 8, 80);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-top: .4px solid rgb(202, 202, 202);
+  border-bottom: .4px solid rgb(202, 202, 202);
+  border-left: .4px solid rgb(202, 202, 202);
+  text-shadow: 1px 2px 5px rgb(8, 8, 80);
+  padding: 13px 13px;
+}
+
+#dark .positionOfSwitch {
+  color: orange;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 13px 13px;
+}
+
+.positionOfSwitch {
+  position: fixed;
+  top: 20%;
+  right: 0%;
+
+  border-radius: 10px 0 0 10px;
+  padding: 10px 10px;
+  background-color: white;
+  box-shadow: 0 0 2px hsl(0, 0%, 80%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}

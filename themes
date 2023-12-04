@@ -1,0 +1,113 @@
+// import ThemeItem from "./ThemeItem";
+// import './themes.css';
+// import herat from '../images/Herat.PNG';
+// import bitDog from '../images/BitDog.PNG';
+// import { FaCog } from "react-icons/fa";
+// import{BsSun,BsMoon} from "react-icons/bs";
+// import { useState } from "react";
+// import { useEffect } from "react";
+
+// const themes=[
+//     {
+//      id:1,
+//      image:herat,
+//      color:'orange'
+//     },
+//     {
+//         id:2,
+//         image:bitDog,
+//         color:'orange'
+//     },
+//     {
+//         id:3,
+//         image:herat,
+//         color:'orange'
+//        },
+//        {
+//            id:4,
+//            image:bitDog,
+//            color:'orange'
+//        },
+//        {
+//         id:5,
+//         image:herat,
+//         color:'orange'
+//        },
+//        {
+//            id:6,
+//            image:bitDog,
+//            color:'orange'
+//        }
+// ];
+
+
+
+// export default function Theme(){
+//     const getStorageColor = () =>{
+//         let color = 'hsl(252,35%,51%)';
+//         if(localStorage.getItem('color')){
+//             color = localStorage.getItem('color');
+//         }
+//         return color;
+//     } 
+    
+    
+//     const getStorageTheme = () =>{
+//         let theme = 'light-theme';
+//         if(localStorage.getItem('theme')){
+//             theme = localStorage.getItem('theme');
+//         }
+//         return theme;
+//     }
+//     const [showSwitcher,setShowSitcher]=useState(false);
+//     const [color,setColor] =useState(getStorageColor());
+//     const [theme,setTheme] =useState(getStorageTheme());
+   
+//     const toggleTheme=()=>{
+//         if(theme === 'light-theme'){
+//             setTheme('dark-light');
+//         }
+//         else{
+//             setTheme('light-theme');
+//         }
+//     }
+//     const changeColor=(color)=>{
+//        setColor(color)
+//     };
+//     useEffect(()=>{
+//         document.documentElement.style.setProperty('blueviolet',color);
+//         localStorage.setItem('color',color);
+//     },[color]);
+//     useEffect(()=>{
+//         document.documentElement.className = theme;
+//         localStorage.setItem('theme',theme);
+//     },[theme]);
+//     return(
+//         <div className="">
+           
+//              <div className={`${showSwitcher ? 'show-switcher':''}  style__switcher `}>
+//                 <div className="style__switcher-toggler" onClick={()=>{setShowSitcher(!showSwitcher)}}>
+//                     <FaCog/>
+//                 </div>
+//                 <div className="theme-toggeler" onClick={toggleTheme}>
+//                   {theme === 'light-theme' ? <BsMoon/>:<BsSun/>}
+//                 </div>
+//                 <h3 className="style__switcher-title">
+//                     style switcher
+//                 </h3>
+//                 <div className="style__switcher-items">
+//                     {
+//                         themes.map((theme,index)=>{
+//                         return <ThemeItem key={index} {... theme} changeColor={changeColor}/>;
+//                         }
+//                         )
+//                     }
+//                 </div>
+//                 <div className="style__switcher-close" onClick={()=>{setShowSitcher(!showSwitcher)}}>
+//                     &times;
+//                 </div>
+//              </div>
+//         </div>
+     
+//     );
+// }

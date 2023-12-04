@@ -1,0 +1,19 @@
+.footer{
+    min-height:10vh;
+}
+.footer_copyright{
+  font-size: larger;
+  margin-top: 2%;
+ 
+}
+.social__media{
+  color: gray;
+  transition: .4s ease-in-out;
+  margin: 3% 1% 5% 1%;
+}
+.social__media:hover{
+  color: white;
+  transform: translateY(-5px);
+  text-shadow: 2px 3px 5px 10px blueviolet;
+}
+

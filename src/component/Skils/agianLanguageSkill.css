@@ -1,0 +1,83 @@
+._container{
+    position: relative;
+    max-width: 600px;
+    min-width: 100px;
+    margin: 0 15px 10% 15px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    box-shadow: 0px 0px 200px var(--language-box-shadow);
+}
+._tooltip{
+    color: black;
+}
+
+ .skill_box{
+    width: 100%;
+    margin: 5px 0;
+}
+.skill_box .title{
+    display: block;
+    color: var(--prograses-title-color);
+    text-shadow:2px 1px 2px white;
+    margin-bottom: 5%;
+}
+.skill_box .skill_bar{
+    height: 25%;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill_box .skill_per{
+    position: relative;
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 6px;
+    background: rgb(89, 169, 235);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+.skill_per.pashto{
+    width: 50%;
+    animation-delay: 0.6s;
+}
+.skill_per.english{
+    width: 60%;
+    animation-delay: 0.7s;
+}
+@keyframes progress{
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.skill_per ._tooltip{
+    position: absolute;
+    right: -1em;
+    top: -2.5em;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: var(--bg-color);
+    z-index: 1;
+}
+._tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -0.7em;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: var(--bg-color);
+    transform: translateX(-50%) rotate(45deg);
+}

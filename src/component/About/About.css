@@ -1,0 +1,73 @@
+.__height{
+    min-height: 80vh;
+}
+/* ._About_padding {
+    padding-top: 10%;
+} */
+body{
+    color: black;
+}
+.side_text{
+    font-size: 1.7em;
+}
+.vertical-timeline-element-content{
+    background: var(--timeline-box-color) !important;
+    box-shadow: 0 0 .25em rgba(0,0,0,0.25),0 0.4em 1.25em 0 rgba(0,0,0,0.15) !important;
+    padding: .5em 1em !important;   
+}
+.vertical-timeline-element-icon {
+    width: 40px !important;
+    height: 40px !important; 
+    position: absolute !important;
+    left: 51% !important;
+  }
+#description{
+  margin: .5em 0 .4em 0;
+  line-height: 1.2em;
+}
+.button{
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+
+}
+.workButton{
+    background-color: #06d6a0;
+}
+.workButton:hover{
+    background-color: #0ac593;
+}
+
+.schoolButton{
+    background-color: #f9c74f;
+}
+.schoolButton:hover{
+    background-color: #f3bc3c;
+}
+@media screen and (max-width:1500px) {
+    .vertical-timeline-element-date{
+        display: block !important;
+        float: none !important;
+        color: black !important;
+        margin-top: 1em;
+    }
+}
+.image{
+    border-radius: 50px;
+    width: 90%;
+    height: 70%;
+}
+@media screen  and (max-width:700px){
+    .vertical-timeline-element-icon {
+        width: 30px !important;
+        height: 30px !important; 
+        position: absolute !important;
+        left: 3% !important;
+      }
+}
+@media screen  and (min-width:701px) and (max-width:1024px){
+    .vertical-timeline-element-icon { 
+        position: absolute !important;
+        left: 0% !important;
+      }
+}

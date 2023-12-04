@@ -1,0 +1,115 @@
+
+*,*::after,*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+    margin-top: 1rem;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right:25%;
+    margin-top: 5%;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.brand{
+ display: none;
+}
+.nav__menue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.nav__toggler div{
+width: 2rem;
+height: 0.2rem;
+margin: 0.3rem;
+background: white;
+transition: .4s;
+}
+.nav__toggler{
+    cursor: pointer;
+    display: none;   
+}
+ 
+.nav__item{
+    border-radius: 50px;
+    padding: 4px 8px;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.nav__item:hover{
+    box-shadow: 0 0 10px var(--bg-color);
+    padding: 5px 8px;
+}
+.item__name{
+    display: none;
+    transition: .6s;
+}
+.nav__link{
+    color: aliceblue;
+}
+.nav__item:hover .item__name{
+    display: inline-block;
+    transition: .6s;
+}
+@media screen  and (max-width:768px){
+    .nav{
+        background: var(--bg-color);
+        justify-content: space-around;
+        margin-top: auto;
+        margin-right: auto;
+    }
+ .nav__toggler {
+    display: block;
+ } 
+ .nav__menue{
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background: var(--bg-color);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: .4s;
+    align-items: center;
+    justify-content:center;
+    
+ }
+ .brand{
+   display: inline-block;
+}
+.nav__item{
+    background-color:var( --nav-item-small-size-bg);
+}
+}
+.nav__active{
+    transform: translateX(0);  
+}
+.toggle .line1{
+    transform: rotate(45deg) translate(6px,4px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(-50deg) translate(8px,-5px);
+}
+ .nav__link.active{
+    color: black;
+ }

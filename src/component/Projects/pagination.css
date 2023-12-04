@@ -1,0 +1,13 @@
+.page-link.pre {
+    background-color: var(--bg-color);
+    color: aliceblue;
+}
+.page-link{
+    color: black;
+    cursor: pointer;
+}
+.active a{
+    background: var(--nav-item-small-size-bg) !important;
+    border-color: var(--nav-item-small-size-bg)  !important;
+   
+}

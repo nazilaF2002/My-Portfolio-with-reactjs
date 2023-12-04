@@ -1,0 +1,134 @@
+.style__switcher {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    background-color: white;
+    z-index: 10;
+    width: 180px;
+    padding: 15px;
+    box-shadow: 0 0 4px hsl(0, 0%, 80%);
+    transform: translateX(100%);
+    transition: all .3s ease;
+}
+
+.show-switcher {
+    transform: translateX(0);
+}
+
+.show-switcher,
+.style__switcher-toggler{
+    border-radius: 5px 0 0 5px;
+}
+
+.style__switcher-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4px;
+    row-gap: 8px;
+}
+
+.style__switcher-title,
+.style__switcher-toggler,
+.style__switcher-close {
+    color: hsl(0, 0%, 40%);
+}
+
+.style__switcher-title {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.theme-image {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.style__switcher-toggler,
+.theme-toggeler {
+    position: absolute;
+    right: 100%;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 2px hsl(0, 0%, 80%);
+    border-radius: 5px 0 0 5px;
+    transition: all 0.3 ease;
+}
+._circle {
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+.style__switcher-close {
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 1%;
+    left: 15px;
+}
+@media screen and (max-width:700px) {
+.style__switcher-toggler,
+.theme-toggeler {
+    height: 35px;
+    width: 35px;
+    font-size: 11px;
+}
+._circle {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.style__switcher-title {
+    font-size: 15px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+.style__switcher-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2px;
+    row-gap: 8px;
+    place-items: center;
+    
+}
+.style__switcher {
+  
+    width: 150px;
+    padding: 7px;
+}
+.style__switcher-close {
+    font-size: 25px;
+    top: -3%;
+    left: 10px;
+}
+}
+
+.show-switcher .style__switcher-toggler,
+.show-switcher .theme-toggeler {
+    right: -100%;
+}
+
+.style__switcher-toggler {
+    top: 10%;
+}
+
+.theme-toggeler {
+    bottom: 10%;
+}
+
+
+
+.style__switcher-title {
+    text-align: right;
+}
+

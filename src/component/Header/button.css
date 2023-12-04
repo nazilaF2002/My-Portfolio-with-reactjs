@@ -1,0 +1,8 @@
+.button__color{
+    background-color: var(--bg-color);
+    color: white;
+    font-size: 15px;
+}
+.button__color:hover{
+    color: white;
+}
