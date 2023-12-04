@@ -41,7 +41,7 @@ export const  TimeLineInformation=[
         id:5,
         title:'English',
         location:'JRS, herat Afghanistan',
-        description: 'I Studid there two books of Qskills',
+        description: 'This also was a great Course I Studid there two books of Qskills',
         date:'March 2019 ',
         icon:'School'
        },
