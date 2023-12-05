@@ -41,12 +41,6 @@ export default function AgainProject() {
     setAllCatagori(false);
   
   }
-  function Allcatagories(item) {
-    setAllCatagori(item);
-  }
-
- 
-  
 
   if (isSearch) {
     showProjects = records.filter((item) => {
@@ -146,7 +140,7 @@ export default function AgainProject() {
             <input type="search" className='search_input' placeholder='Enter the Project name' onChange={Search} />
           </form>
           {/* here I used selectedcatagories component that made befor to show select Option*/}
-          <SelectCatagories getData={Slectcatagories} isSelect={setIsSelect} allCatagori={setAllCatagori} Allcatagories={Allcatagories} />
+          <SelectCatagories getData={Slectcatagories} isSelect={setIsSelect} allCatagori={setAllCatagori} />
         </div>
         {/* here my project will be shown */}
         {showProjects}
