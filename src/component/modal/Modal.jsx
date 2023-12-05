@@ -23,7 +23,7 @@ export default function Modal(props){
   <>
   {/* and here I used portals to transfer my modal to index.html */}
   {ReactDOM.createPortal(<Overlay isOpen={props.isOpen} />,
-  document.getElementById('modal'))}
+  document.getElementById('overlay'))}
   {ReactDOM.createPortal(<ShowModal isOpen={props.isOpen} onClose={props.onClose} image={props.image}  />,
   document.getElementById('modal'))}
   </>
