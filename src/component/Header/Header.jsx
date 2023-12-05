@@ -34,7 +34,6 @@ export default function Header() {
                 <Position />
                 <br />
                 {/* here I used button component that will download my cv */}
-                {/* <Buttons name='Read More' addresses='../' nameOfDownload='CV' /> */}
                 <a href={Cv} download>
                 <Buttons>Download CV</Buttons>
                 </a>
