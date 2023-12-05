@@ -11,12 +11,9 @@ export default function SelectCatagories(props){
   // this is internal css in react
   const selectCatagori={
     width:'210px',
-    // width:'250px',
     height:'35px',
-    // height:'40px',
     borderRadius:'20px',
     padding:'5px 13px',
-    // padding:'5px 3px',
     outline:'blue',
     border:'none',
     boxShadow:' 1px 2px 10px 2px var(--bg-color)'
